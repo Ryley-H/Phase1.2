@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+    <title>Tabs</title>
+
+</head>
+
+<body>
+
+    <!-- "Text" Tab Content -->
+    <div id="text" class="content active">
+        <div id="text-content">
+            <h1>Text</h1>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+            <p>CMSC434</p><br>
+        </div>
+    </div>
+
+    <!-- "LR" Tab Content -->
+    <div id="lr" class="content">
+        <div id="lr-content">
+            <h1>LR</h1>
+            <p class="lower-right">Down Here</p>
+        </div>
+    </div>
+
+    <!-- "Colors" Tab Content -->
+    <div id="colors" class="content">
+        <h1>Colors</h1>
+        <p class="yellow-black">CMSC434 </p>
+        <p class="purple-yellow">Class is held every Tuesday and Thursday</p>
+    </div>
+
+    <!-- Navbar -->
+    <div class="tabs">
+        <button class="tab" onclick="showTab('text')">Text</button>
+        <button class="tab" onclick="showTab('lr')">LR</button>
+        <button class="tab" onclick="showTab('colors')">Colors</button>
+        <button class="tab" onclick="showTab('profile')">Profile</button>
+        <button class="tab" onclick="showTab('choices')">Choices</button>
+        <button class="tab" onclick="showTab('todo')">ToDo</button>
+    </div>
+
+</body>
+</html>
