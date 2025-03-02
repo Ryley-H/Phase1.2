@@ -14,7 +14,7 @@
     <!-- "Text" Tab Content -->
     <div id="text" class="content active">
         <div id="text-content">
-            <h1>Text</h1>
+            <h1>- Text -</h1>
             <p>CMSC434</p><br>
             <p>CMSC434</p><br>
             <p>CMSC434</p><br>
@@ -38,16 +38,50 @@
     <!-- "LR" Tab Content -->
     <div id="lr" class="content">
         <div id="lr-content">
-            <h1>LR</h1>
+            <h1>- LR -</h1>
             <p class="lower-right">Down Here</p>
         </div>
     </div>
 
     <!-- "Colors" Tab Content -->
     <div id="colors" class="content">
-        <h1>Colors</h1>
+        <h1>- Colors -</h1>
         <p class="yellow-black">CMSC434 </p>
         <p class="purple-yellow">Class is held every Tuesday and Thursday</p>
+    </div>
+
+    <!-- "Profile" Tab Content -->
+    <div id="profile" class="content">
+        <h1>- Profile -</h1>
+        <div class="profile-container">
+          <img id="profile-image" src="UMDGlobe.gif" alt="Profile Image" onclick="showNotification()">
+          <p class="profile-name"><b>John Doe</b></p>
+    </div>
+                 <!-- Notification  -->
+         <div id="notification" class="notification">
+                <p><b>Warning!</b> Do not select the profile image!</p>
+            <button onclick="closeNotification()">Close</button>
+            </div>
+    </div>
+
+    <!-- "Choices" Tab Content -->
+    <div id="choices" class="content">
+        <h1>Choices</h1>
+
+        <h3>Select Your Favorite Coding Language:</h3>
+            <label><input type="radio" name="language" value="Java"> Java</label>
+            <label><input type="radio" name="language" value="Python"> Python</label>
+            <label><input type="radio" name="language" value="C"> C</label>
+        <h3>Select Your College Year:</h3>
+        <select id="year-dropdown">
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+        </select><br><br>
+
+        <button id="submit-choices">Submit</button>
+        <p id="result-choices"></p>
     </div>
 
     <!-- Navbar -->
